@@ -8,29 +8,29 @@
 
 
     <EditText
-        android:id="@+id/ETUsuario"
+        android:id="@+id/etUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/ETCajaNumeros"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128"
-        android:textSize="30sp"/>
-
-    <EditText
-        android:id="@+id/ETCajaNumeros"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:textSize="100sp"
+        android:layout_marginBottom="7dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="408dp"
+        android:layout_height="143dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="68dp" />
+
+
 
     <Button
         android:id="@+id/bBorrar"
@@ -183,5 +183,7 @@
         tools:layout_editor_absoluteX="292dp"
         tools:layout_editor_absoluteY="494dp"
         android:text="=" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
