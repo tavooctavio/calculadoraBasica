@@ -11,179 +11,213 @@
         android:id="@+id/etUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="7dp"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toTopOf="@+id/etCajaNumeros"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="408dp"
-        android:layout_height="143dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="60sp"
+        android:id="@+id/etCajaNumeros"
+        android:layout_width="409dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="2dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="68dp" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
 
     <Button
         android:id="@+id/bBorrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="211dp"
-        android:text="CE" />
+        android:text="CE"
+        app:layout_constraintBottom_toTopOf="@+id/bSiete"
+        app:layout_constraintEnd_toStartOf="@+id/bMasMenos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCajaNumeros" />
 
     <Button
         android:id="@+id/bMasMenos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="211dp"
-        android:text="+/-" />
+        android:text="+/-"
+        app:layout_constraintBottom_toTopOf="@+id/bOcho"
+        app:layout_constraintEnd_toStartOf="@+id/bPorcentaje"
+        app:layout_constraintStart_toEndOf="@+id/bBorrar"
+        app:layout_constraintTop_toBottomOf="@+id/etCajaNumeros" />
 
     <Button
         android:id="@+id/bPorcentaje"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="211dp"
-        android:text="%" />
+        android:text="%"
+        app:layout_constraintBottom_toTopOf="@+id/bNueve"
+        app:layout_constraintEnd_toStartOf="@+id/bDivision"
+        app:layout_constraintStart_toEndOf="@+id/bMasMenos"
+        app:layout_constraintTop_toBottomOf="@+id/etCajaNumeros" />
 
     <Button
         android:id="@+id/bDivision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="211dp"
-        android:text="/" />
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/bMultiplicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bPorcentaje"
+        app:layout_constraintTop_toBottomOf="@+id/etCajaNumeros" />
 
     <Button
         android:id="@+id/bSiete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="285dp"
-        android:text="7" />
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/bCuatro"
+        app:layout_constraintEnd_toStartOf="@+id/bOcho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bBorrar" />
 
     <Button
         android:id="@+id/bOcho"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="285dp"
-        android:text="8" />
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/bCinco"
+        app:layout_constraintEnd_toStartOf="@+id/bNueve"
+        app:layout_constraintStart_toEndOf="@+id/bSiete"
+        app:layout_constraintTop_toBottomOf="@+id/bMasMenos" />
 
     <Button
         android:id="@+id/bNueve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="285dp"
-        android:text="9" />
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/bSeis"
+        app:layout_constraintEnd_toStartOf="@+id/bMultiplicacion"
+        app:layout_constraintStart_toEndOf="@+id/bOcho"
+        app:layout_constraintTop_toBottomOf="@+id/bPorcentaje" />
 
     <Button
         android:id="@+id/bMultiplicacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="285dp"
-        android:text="*" />
+        android:text="*"
+        app:layout_constraintBottom_toTopOf="@+id/bMenos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bNueve"
+        app:layout_constraintTop_toBottomOf="@+id/bDivision" />
 
     <Button
         android:id="@+id/bCuatro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="351dp"
-        android:text="4" />
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/bUno"
+        app:layout_constraintEnd_toStartOf="@+id/bCinco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSiete" />
 
     <Button
         android:id="@+id/bCinco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="351dp"
-        android:text="5" />
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/bDos"
+        app:layout_constraintEnd_toStartOf="@+id/bSeis"
+        app:layout_constraintStart_toEndOf="@+id/bCuatro"
+        app:layout_constraintTop_toBottomOf="@+id/bOcho" />
 
     <Button
         android:id="@+id/bSeis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="351dp"
-        android:text="6" />
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/bTres"
+        app:layout_constraintEnd_toStartOf="@+id/bMenos"
+        app:layout_constraintStart_toEndOf="@+id/bCinco"
+        app:layout_constraintTop_toBottomOf="@+id/bNueve" />
 
     <Button
         android:id="@+id/bMenos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="358dp"
-        android:text="-"/>
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/bSuma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bSeis"
+        app:layout_constraintTop_toBottomOf="@+id/bMultiplicacion" />
 
     <Button
         android:id="@+id/bUno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="417dp"
-        android:text="1" />
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/bCero"
+        app:layout_constraintEnd_toStartOf="@+id/bDos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bCuatro" />
 
     <Button
         android:id="@+id/bDos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="417dp"
-        android:text="2" />
+        android:layout_marginBottom="59dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/bCero"
+        app:layout_constraintEnd_toStartOf="@+id/bTres"
+        app:layout_constraintStart_toEndOf="@+id/bUno"
+        app:layout_constraintTop_toBottomOf="@+id/bCinco" />
 
     <Button
         android:id="@+id/bTres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="424dp"
-        android:text="3" />
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/bPunto"
+        app:layout_constraintEnd_toStartOf="@+id/bSuma"
+        app:layout_constraintStart_toEndOf="@+id/bDos"
+        app:layout_constraintTop_toBottomOf="@+id/bSeis" />
 
     <Button
         android:id="@+id/bSuma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="424dp"
-        android:text="*" />
+        android:text="*"
+        app:layout_constraintBottom_toTopOf="@+id/bIgual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bTres"
+        app:layout_constraintTop_toBottomOf="@+id/bMenos" />
 
     <Button
         android:id="@+id/bCero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="494dp"
-        android:text="0" />
+        android:layout_width="184dp"
+        android:layout_height="46dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/bPunto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bUno" />
 
     <Button
         android:id="@+id/bPunto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="186dp"
-        tools:layout_editor_absoluteY="494dp"
-        android:text="." />
+        android:text="."
+        app:layout_constraintEnd_toStartOf="@+id/bIgual"
+        app:layout_constraintStart_toEndOf="@+id/bCero"
+        app:layout_constraintTop_toBottomOf="@+id/bTres" />
 
     <Button
         android:id="@+id/bIgual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="494dp"
-        android:text="=" />
-
+        android:text="="
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bPunto"
+        app:layout_constraintTop_toBottomOf="@+id/bSuma" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
