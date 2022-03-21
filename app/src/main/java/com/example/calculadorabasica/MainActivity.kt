@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         var bPunto = findViewById<Button>(R.id.bPunto)
         var bIgual = findViewById<Button>(R.id.bIgual)
 
+        var listaUno = arrayListOf<String>()
+        var listaDos = arrayListOf<String>()
+
         var usuario: String? = intent.getStringExtra("usuario")
         tvUsuario.text = usuario
 
@@ -50,7 +53,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         bDivision.setOnClickListener {
-            tvCajaNumeros.text = "/"
+            listaUno[0] = "/"
+            tvCajaNumeros.text = listaUno[0]
         }
 
         bSiete.setOnClickListener {
