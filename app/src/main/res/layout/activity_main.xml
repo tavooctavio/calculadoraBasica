@@ -14,14 +14,14 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="7dp"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/etCajaNumeros"
+        app:layout_constraintBottom_toTopOf="@+id/tvCajaNumeros"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/etCajaNumeros"
+        android:id="@+id/tvCajaNumeros"
         android:layout_width="409dp"
         android:layout_height="130dp"
         android:layout_marginTop="11dp"
@@ -29,7 +29,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvUsuario" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuario"
+        android:textSize="70dp" />
 
     <Button
         android:id="@+id/bBorrar"
@@ -39,7 +40,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bSiete"
         app:layout_constraintEnd_toStartOf="@+id/bMasMenos"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etCajaNumeros" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCajaNumeros" />
 
     <Button
         android:id="@+id/bMasMenos"
@@ -49,7 +50,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bOcho"
         app:layout_constraintEnd_toStartOf="@+id/bPorcentaje"
         app:layout_constraintStart_toEndOf="@+id/bBorrar"
-        app:layout_constraintTop_toBottomOf="@+id/etCajaNumeros" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCajaNumeros" />
 
     <Button
         android:id="@+id/bPorcentaje"
@@ -59,7 +60,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bNueve"
         app:layout_constraintEnd_toStartOf="@+id/bDivision"
         app:layout_constraintStart_toEndOf="@+id/bMasMenos"
-        app:layout_constraintTop_toBottomOf="@+id/etCajaNumeros" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCajaNumeros" />
 
     <Button
         android:id="@+id/bDivision"
@@ -69,7 +70,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bMultiplicacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bPorcentaje"
-        app:layout_constraintTop_toBottomOf="@+id/etCajaNumeros" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCajaNumeros" />
 
     <Button
         android:id="@+id/bSiete"
@@ -186,7 +187,7 @@
         android:id="@+id/bSuma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="*"
+        android:text="+"
         app:layout_constraintBottom_toTopOf="@+id/bIgual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bTres"
