@@ -34,8 +34,6 @@ class MainActivity : AppCompatActivity() {
         var bPunto = findViewById<Button>(R.id.bPunto)
         var bIgual = findViewById<Button>(R.id.bIgual)
 
-        var listaUno = arrayListOf<String>()
-        var listaDos = arrayListOf<String>()
 
         var usuario: String? = intent.getStringExtra("usuario")
         tvUsuario.text = usuario
@@ -53,64 +51,63 @@ class MainActivity : AppCompatActivity() {
         }
 
         bDivision.setOnClickListener {
-            listaUno[0] = "/"
-            tvCajaNumeros.text = listaUno[0]
+
         }
 
         bSiete.setOnClickListener {
-            tvCajaNumeros.text = "7"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}7"
         }
 
         bOcho.setOnClickListener {
-            tvCajaNumeros.text = "8"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}8"
         }
 
         bNueve.setOnClickListener {
-            tvCajaNumeros.text = "9"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}9"
         }
 
         bMultiplicacion.setOnClickListener {
-            tvCajaNumeros.text = "*"
+
         }
 
         bCuatro.setOnClickListener {
-            tvCajaNumeros.text = "4"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}4"
         }
 
         bCinco.setOnClickListener {
-            tvCajaNumeros.text = "5"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}5"
         }
 
         bSeis.setOnClickListener {
-            tvCajaNumeros.text = "6"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}6"
         }
 
         bMenos.setOnClickListener {
-            tvCajaNumeros.text = "-"
+
         }
 
         bUno.setOnClickListener {
-            tvCajaNumeros.text = "1"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}1"
         }
 
         bDos.setOnClickListener {
-            tvCajaNumeros.text = "2"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}2"
         }
 
         bTres.setOnClickListener {
-            tvCajaNumeros.text = "3"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}3"
         }
 
         bSumas.setOnClickListener {
-            tvCajaNumeros.text = "+"
+
         }
 
         bCero.setOnClickListener {
-            tvCajaNumeros.text = "0"
+            tvCajaNumeros.text = "${tvCajaNumeros.text}0"
         }
 
         bPunto.setOnClickListener {
-            tvCajaNumeros.text = "."
+            tvCajaNumeros.text = "${tvCajaNumeros.text}."
         }
 
         bIgual.setOnClickListener {
@@ -119,12 +116,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
-
-
-
-
-
     }
+
 }
