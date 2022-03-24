@@ -8,6 +8,10 @@ import android.widget.TextView
 import java.time.temporal.ValueRange
 
 class MainActivity : AppCompatActivity() {
+
+    var numero1: Double = 0.0
+    var numero2: Double = 0.0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,15 +38,19 @@ class MainActivity : AppCompatActivity() {
         var bPunto = findViewById<Button>(R.id.bPunto)
         var bIgual = findViewById<Button>(R.id.bIgual)
 
+        var operacion = 0
+
 
         var usuario: String? = intent.getStringExtra("usuario")
         tvUsuario.text = usuario
 
         bBorrar.setOnClickListener{
-
+            tvCajaNumeros.text = " "
         }
 
         bMasMenos.setOnClickListener{
+            numero1 = tvCajaNumeros.text.toString().toDouble()
+
 
         }
 
@@ -51,7 +59,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         bDivision.setOnClickListener {
-
+            operacion = 1
+            numero1 = tvCajaNumeros.text.toString().toDouble()
+            tvCajaNumeros.text = " "
         }
 
         bSiete.setOnClickListener {
@@ -67,7 +77,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         bMultiplicacion.setOnClickListener {
-
+            operacion = 2
+            numero1 = tvCajaNumeros.text.toString().toDouble()
+            tvCajaNumeros.text = " "
         }
 
         bCuatro.setOnClickListener {
@@ -83,7 +95,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         bMenos.setOnClickListener {
-
+            operacion = 3
+            numero1 = tvCajaNumeros.text.toString().toDouble()
+            tvCajaNumeros.text = " "
         }
 
         bUno.setOnClickListener {
@@ -99,7 +113,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         bSumas.setOnClickListener {
-
+            operacion = 4
+            numero1 = tvCajaNumeros.text.toString().toDouble()
+            tvCajaNumeros.text = " "
         }
 
         bCero.setOnClickListener {
@@ -112,6 +128,17 @@ class MainActivity : AppCompatActivity() {
 
         bIgual.setOnClickListener {
 
+            numero2= tvCajaNumeros.text.toString().toDouble()
+
+            var resultado = when(operacion){
+                1 -> numero1 / numero2
+                2 -> numero1 * numero2
+                3 -> numero1 - numero2
+                4 -> numero1 + numero2
+                else -> tvCajaNumeros.text = " "
+            }
+
+            tvCajaNumeros.text = resultado.toString()
         }
 
 
