@@ -49,13 +49,24 @@ class MainActivity : AppCompatActivity() {
         }
 
         bMasMenos.setOnClickListener{
+            var respuesta = 0.0;
             numero1 = tvCajaNumeros.text.toString().toDouble()
 
-
+            if (numero1 > 0 ){
+                tvCajaNumeros.text = "-${tvCajaNumeros.text}"
+            }else if (numero1 < 0){
+                respuesta = numero1 * (-1)
+                tvCajaNumeros.text = "${respuesta}"
+            }else{
+                tvCajaNumeros.text = tvCajaNumeros.text
+            }
         }
 
         bPorcentaje.setOnClickListener {
-
+            var respuesta = 0.0
+            numero1 = tvCajaNumeros.text.toString().toDouble()
+            respuesta = numero1 / 100
+            tvCajaNumeros.text = "${respuesta}"
         }
 
         bDivision.setOnClickListener {
