@@ -14,11 +14,9 @@ class PantallaInicio : AppCompatActivity() {
 
 
         val btIniciar = findViewById<Button>(R.id.btListo)
-        val etNombreUsuario = findViewById<EditText>(R.id.etNombreUsuario)
 
         btIniciar.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("usuario",etNombreUsuario.text.toString())
             startActivity(intent)
         }
 

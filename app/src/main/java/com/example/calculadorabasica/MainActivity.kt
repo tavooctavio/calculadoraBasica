@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var tvUsuario = findViewById<TextView>(R.id.tvUsuario)
+        //var tvUsuario = findViewById<TextView>(R.id.tvUsuario)
         var tvCajaNumeros = findViewById<TextView>(R.id.tvCajaNumeros)
         var bBorrar = findViewById<Button>(R.id.bBorrar)
         var bMasMenos = findViewById<Button>(R.id.bMasMenos)
@@ -41,8 +41,8 @@ class MainActivity : AppCompatActivity() {
         var operacion = 0
 
 
-        var usuario: String? = intent.getStringExtra("usuario")
-        tvUsuario.text = usuario
+        /*var usuario: String? = intent.getStringExtra("usuario")
+        tvUsuario.text = usuario */
 
         bBorrar.setOnClickListener{
             tvCajaNumeros.text = " "
