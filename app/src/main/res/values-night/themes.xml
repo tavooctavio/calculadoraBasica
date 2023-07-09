@@ -13,4 +13,10 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#efefef</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splashlogo</item>
+        <item name="postSplashScreenTheme">@style/Theme.CalculadoraBasica</item>
+    </style>
 </resources>
